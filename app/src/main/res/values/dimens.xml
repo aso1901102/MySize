@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="droidwidth">170dp</dimen>
+    <dimen name="droidhight">200dp</dimen>
+    <dimen name="neckwidth">70dp</dimen>
+    <dimen name="buttonReach">16dp</dimen>
+    <dimen name="heightFontSize">36sp</dimen>
+    <dimen name="spnner_width">100dp</dimen>
+    <dimen name="spnner_height">48dp</dimen>
+    <dimen name="seekbar_Height">24dp</dimen>
+</resources>

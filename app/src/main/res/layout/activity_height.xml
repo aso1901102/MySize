@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HeightActivity">
+
+    <TextView
+        android:id="@+id/heightTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/heightText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="@string/heightDefaultValue"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="@dimen/heightFontSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="@dimen/spnner_width"
+        android:layout_height="@dimen/spnner_height"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:entries="@array/txt_height_array"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="352dp"
+        android:layout_height="@dimen/seekbar_Height"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="4dp"
+        android:max="@integer/seekbar_MaxValue"
+        android:progress="@integer/seekBar_DefaultValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spinner" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:orientation="horizontal"
+        android:soundEffectsEnabled="false"
+        android:splitMotionEvents="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBar">
+
+        <RadioButton
+            android:id="@+id/height1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/height1_Value" />
+
+        <RadioButton
+            android:id="@+id/height2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/height2_Value" />
+
+        <RadioButton
+            android:id="@+id/height3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/height3_Value" />
+
+        <RadioButton
+            android:id="@+id/height4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/height4_Value" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

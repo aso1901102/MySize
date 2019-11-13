@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/waist"
+        android:layout_width="@dimen/neckwidth"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/waistHint"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/droidImage"
+        app:layout_constraintEnd_toStartOf="@+id/droidImage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/inseam"
+        android:layout_width="@dimen/neckwidth"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/insermHint"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/droidImage"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <EditText
+        android:id="@+id/sleeve"
+        android:layout_width="@dimen/neckwidth"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/sleeveHint"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/droidImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/droidImage"
+        app:layout_constraintTop_toTopOf="@+id/droidImage" />
+
+    <ImageView
+        android:id="@+id/droidImage"
+        android:layout_width="@dimen/droidwidth"
+        android:layout_height="@dimen/droidhight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.261"
+        app:srcCompat="@drawable/ic_mysize" />
+
+    <EditText
+        android:id="@+id/neck"
+        android:layout_width="@dimen/neckwidth"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/neckHint"
+        android:inputType="numberDecimal"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/waist"
+        app:layout_constraintEnd_toStartOf="@+id/droidImage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/droidImage" />
+
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveButtonText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inseam" />
+
+    <ImageButton
+        android:id="@+id/heightButtoon"
+        android:layout_width="67dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/buttonReach"
+        android:layout_marginEnd="@dimen/buttonReach"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_accessibility_black_24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
