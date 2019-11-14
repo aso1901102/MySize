@@ -14,6 +14,7 @@ import kotlinx.android.synthetic.main.activity_height.*
 
 class HeightActivity : AppCompatActivity() {
 
+    //edit test nagaike
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_height)
